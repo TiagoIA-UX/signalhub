@@ -1,0 +1,28 @@
+# Copie para dorks.yaml (arquivo local — NÃO commitar)
+# Ver CONFIDENCIAL.md na raiz do projeto
+
+meta:
+  tenant: lex_rocha
+  max_results_por_dork: 8
+  delay_segundos_entre_dorks: 3
+
+fontes:
+  - duckduckgo
+  - reddit
+  - hackernews
+
+reddit:
+  subreddits:
+    - brasil
+  limit: 15
+
+hackernews:
+  queries:
+    - consumer rights brazil
+
+rss:
+  feeds: []
+
+dorks:
+  - id: exemplo_local_01
+    query: "[PREENCHER LOCALMENTE — query confidencial]"

@@ -1,0 +1,18 @@
+# Fixture mínima para pytest — não é taxonomia de produção
+nichos:
+  lex_rocha:
+    nome: "Test Lex"
+    score_minimo: 7
+    grupos:
+      G1_produto_defeito:
+        nome: "Test"
+        peso: 9
+        keywords:
+          - "produto com defeito"
+          - "garantia negada"
+      G9_orientacao:
+        nome: "Test"
+        peso: 8
+        keywords:
+          - "vale a pena procon"
+intencao_alta: []

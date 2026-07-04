@@ -1,0 +1,113 @@
+# LexBot — Keywords CDC (Lex Rocha)
+
+nichos:
+  lex_rocha:
+    nome: "Lex Rocha — Consultoria CDC"
+    emoji: "⚖️"
+    cta_link: "https://lexrocha.com.br"
+    cta_texto: "Pesquisa de precedentes — material informativo"
+    score_minimo: 7
+
+    grupos:
+      G1_produto_defeito:
+        nome: "Produto com defeito / vício oculto"
+        peso: 9
+        keywords:
+          - "produto com defeito"
+          - "30 dias para consertar"
+          - "vício oculto"
+          - "produto parou de funcionar"
+          - "garantia negada"
+          - "não quiseram trocar"
+          - "assistência técnica negou"
+          - "produto chegou quebrado"
+
+      G2_arrependimento:
+        nome: "Direito de arrependimento (7 dias)"
+        peso: 8
+        keywords:
+          - "direito de arrependimento"
+          - "7 dias para devolver"
+          - "não aceitaram devolução"
+          - "arrependimento de compra"
+          - "como devolver compra online"
+
+      G3_cobranca_indevida:
+        nome: "Cobrança indevida / abusiva"
+        peso: 9
+        keywords:
+          - "cobrança indevida"
+          - "me cobraram duas vezes"
+          - "cobrança após cancelamento"
+          - "débito não autorizado"
+          - "estorno não caiu"
+
+      G4_assinatura_cancelamento:
+        nome: "Assinatura que não cancela"
+        peso: 8
+        keywords:
+          - "assinatura que não cancela"
+          - "não consigo cancelar"
+          - "cobram mesmo cancelado"
+
+      G5_saude_plano:
+        nome: "Plano de saúde — negativa de cobertura"
+        peso: 10
+        keywords:
+          - "negativa de cobertura"
+          - "plano negou cirurgia"
+          - "plano de saúde recusou"
+          - "reembolso negado plano"
+
+      G6_telecom:
+        nome: "Telecom — internet / celular"
+        peso: 7
+        keywords:
+          - "internet caindo"
+          - "velocidade abaixo do contratado"
+          - "portabilidade bloqueada"
+
+      G7_conta_banco:
+        nome: "Conta bloqueada / banco digital"
+        peso: 8
+        keywords:
+          - "conta bloqueada"
+          - "bloquearam minha conta"
+          - "pix bloqueado"
+          - "conta suspensa"
+
+      G8_lgpd_dados:
+        nome: "LGPD / vazamento de dados"
+        peso: 8
+        keywords:
+          - "vazamento de dados"
+          - "meu cpf foi usado"
+          - "fraude no meu nome"
+          - "lgpd"
+
+      G9_procon_decisao:
+        nome: "Procon / orientação consumidor"
+        peso: 9
+        keywords:
+          - "vale a pena procon"
+          - "quanto tempo tenho para reclamar"
+          - "antes de contratar advogado"
+          - "alguém já passou por isso"
+          - "meus direitos como consumidor"
+
+      G10_ecommerce:
+        nome: "E-commerce — entrega / reembolso"
+        peso: 8
+        keywords:
+          - "produto não chegou"
+          - "não reembolsaram"
+          - "produto diferente do anúncio"
+
+intencao_alta:
+  - "o que fazer quando"
+  - "alguém já passou por isso"
+  - "como proceder"
+  - "preciso de ajuda"
+  - "me ajudem"
+  - "vale a pena"
+  - "antes de contratar"

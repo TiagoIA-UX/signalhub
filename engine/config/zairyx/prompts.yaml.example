@@ -1,0 +1,7 @@
+# Copie para prompts.yaml — preencha localmente (NÃO commitar)
+groq_system_template: |
+  [PREENCHER — prompt Groq proprietário]
+  NICHO: {nicho_nome}
+  GRUPO DE DOR: {grupo_nome}
+  CTA: {cta_txt} — {cta_link}
+  Retorne SOMENTE JSON: {{"r1":"...","r2":"...","r3":"..."}}

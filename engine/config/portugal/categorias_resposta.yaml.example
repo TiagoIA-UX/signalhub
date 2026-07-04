@@ -1,0 +1,105 @@
+# Referência R1/R2/R3 por categoria (pt-PT) — Groq usa prompts.yaml; isto é guia manual
+
+# Copie trechos para Portal da Queixa ou refine prompts locais
+
+
+
+meta:
+
+  tenant: lex_portugal
+
+  moeda: EUR
+
+
+
+categorias:
+
+  pt_cancelamento:
+
+    r1: "Olá, compreendemos a frustração com fidelização ou renovação. Em Portugal há regras claras sobre denúncia e prazos — o seu caso merece ser lido com atenção."
+
+    r2: "Pela Lei n.º 24/96 e o DL 156/2005, a empresa deve responder no prazo de 15 dias úteis após reclamação formal. Se o prazo passou, pode escalar. Consulta jurídica tradicional ronda €150–€300/hora."
+
+    r3: "Relatório reservado com enquadramento e referências públicas aplicáveis — valor fixo muito abaixo de uma consulta. www.direitosconsumidor.com"
+
+  pt_cobranca_indevida:
+
+    r1: "Olá, cobranças indevidas são uma das queixas mais frequentes — não está só."
+
+    r2: "Tem direito a contestação e resposta em 15 dias úteis (Livro de Reclamações). Em banca, cópia ao Banco de Portugal pode ser relevante."
+
+    r3: "Organizamos o quadro documental do seu caso por valor acordado antes do pagamento. direitosconsumidor.com"
+
+  pt_produto_nao_entregue:
+
+    r1: "Olá, atrasos e não entrega geram direito a reclamação formal e, conforme o caso, reembolso."
+
+    r2: "Prazo de 15 dias úteis para resposta da empresa. CTT e loja online têm obrigações distintas — convém documentar datas."
+
+    r3: "Relatório com cronologia e passos possíveis — Essencial a partir de €29. direitosconsumidor.com"
+
+  pt_burla:
+
+    r1: "Olá, situações de burla exigem calma e registo — lamentamos o que descreve."
+
+    r2: "Pode formalizar queixa, preservar provas e avaliar vias de consumo e, se aplicável, queixa criminal — sem prometer resultado."
+
+    r3: "Análise documental completa (plano Completo €59) para decidir próximos passos com clareza."
+
+  pt_saude_seguro:
+
+    r1: "Olá, recusas de cobertura ou atrasos em seguros/saúde são exigentes emocionalmente."
+
+    r2: "Prazos de resposta e entidades (ASF/operador) dependem do contrato — 15 dias úteis como base em reclamação ao fornecedor."
+
+    r3: "Relatório reservado com referências ao seu tipo de contrato. direitosconsumidor.com"
+
+  pt_telecom:
+
+    r1: "Olá, alterações de preço ou fidelização em telecom são queixas muito comuns em Portugal."
+
+    r2: "15 dias úteis para resposta; em telecom deve constar cópia à ANACOM. Consulta presencial costuma ser cara face a um relatório fixo."
+
+    r3: "Casos semelhantes com compensação variável — relatório Padrão €39. direitosconsumidor.com"
+
+  pt_banco:
+
+    r1: "Olá, comissões e contestações bancárias têm enquadramento específico."
+
+    r2: "Reclamação ao banco com prazo de 15 dias úteis; Banco de Portugal como escalão seguinte quando aplicável."
+
+    r3: "Clareza documental para falar com o seu banco ou advogado — valor acordado por escrito. direitosconsumidor.com"
+
+  pt_energia:
+
+    r1: "Olá, faturas de energia incorretas ou mudanças de tarifa merecem verificação."
+
+    r2: "ERSE regula o sector; reclamação formal com prazo de 15 dias úteis à comercializadora."
+
+    r3: "Relatório com quadro legal e referências — direitosconsumidor.com"
+
+  pt_habitacao:
+
+    r1: "Olá, arrendamento e cauções são temas sensíveis — os seus direitos importam."
+
+    r2: "Novo Regime do Arrendamento Urbano e Livro de Reclamações aplicam-se conforme o caso; prazo habitual de 15 dias úteis à resposta."
+
+    r3: "Síntese documental para decidir — planos desde €29. direitosconsumidor.com"
+
+  pt_ecommerce:
+
+    r1: "Olá, compras online com atraso ou reembolso pendente são frequentes."
+
+    r2: "Direito de livre resolução e prazos de devolução/reembolso dependem do tipo de compra — 15 dias úteis para resposta à reclamação."
+
+    r3: "Relatório reservado com passos e referências em euros. direitosconsumidor.com"
+
+  pt_logistica:
+
+    r1: "Olá, encomendas em atraso com CTT ou transportadora são stressantes."
+
+    r2: "Documente envio e prazos; reclamação formal à operadora logística e ao vendedor, com 15 dias úteis de resposta."
+
+    r3: "Análise Essencial €29 para organizar o caso. direitosconsumidor.com"
+
+

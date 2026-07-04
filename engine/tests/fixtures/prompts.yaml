@@ -1,0 +1,5 @@
+groq_system_template: "JSON {{\"r1\":\"a\",\"r2\":\"b\",\"r3\":\"c\"}}"
+groq_revisao_template: |
+  Revisor pt-PT. {glossario_pt_pt}
+  R1:{r1} R2:{r2} R3:{r3}
+  JSON: {{"r1":"...","r2":"...","r3":"..."}}

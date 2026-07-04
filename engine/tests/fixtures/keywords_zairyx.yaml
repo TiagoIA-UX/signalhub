@@ -1,0 +1,13 @@
+# Fixture mínima para pytest — não é taxonomia de produção
+nichos:
+  zairyx:
+    nome: "Test Zairyx"
+    score_minimo: 7
+    grupos:
+      Z1_comissao_ifood:
+        nome: "Test"
+        peso: 10
+        keywords:
+          - "comissão ifood alta"
+          - "motoboy próprio"
+intencao_alta: []

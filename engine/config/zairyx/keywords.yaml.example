@@ -1,0 +1,16 @@
+# Copie para keywords.yaml — taxonomia proprietária (NÃO commitar)
+nichos:
+  zairyx:
+    nome: "[SEU NICHO]"
+    emoji: "🚀"
+    cta_link: "https://www.zairyx.com.br"
+    cta_texto: "[CTA]"
+    score_minimo: 7
+    grupos:
+      Z1_exemplo:
+        nome: "Grupo exemplo"
+        peso: 8
+        keywords:
+          - "[keyword confidencial]"
+
+intencao_alta: []

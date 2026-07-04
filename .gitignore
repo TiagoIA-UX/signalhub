@@ -1,0 +1,33 @@
+# Credenciais
+.env
+.env.*
+!.env.example
+bot/.env
+web/.env.local
+engine/**/.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Node
+node_modules/
+web/.next/
+web/out/
+
+# Dados locais / logs
+logs/
+*.log
+*.sqlite
+*.db
+bot/data/*.sqlite
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

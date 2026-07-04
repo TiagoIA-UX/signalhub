@@ -1,0 +1,83 @@
+# ZairyxBot — Keywords Delivery
+
+nichos:
+  zairyx:
+    nome: "Zairyx — Delivery Independente"
+    emoji: "🚀"
+    cta_link: "https://www.zairyx.com.br"
+    cta_texto: "Ebook Google Meu Negócio grátis + cardápio sem comissão"
+    score_minimo: 7
+
+    grupos:
+      Z1_comissao_ifood:
+        nome: "Comissão iFood / Rappi alta"
+        peso: 10
+        keywords:
+          - "comissão ifood alta"
+          - "ifood cobra muito"
+          - "taxa ifood"
+          - "27% ifood"
+          - "30% ifood"
+          - "margem destruída pelo ifood"
+
+      Z2_entregador_proprio:
+        nome: "Entregador próprio / logística"
+        peso: 9
+        keywords:
+          - "entregador próprio"
+          - "motoboy próprio"
+          - "delivery sem plataforma"
+          - "entrega própria"
+
+      Z3_canal_proprio:
+        nome: "Canal próprio / WhatsApp"
+        peso: 9
+        keywords:
+          - "canal próprio whatsapp"
+          - "cardápio digital próprio"
+          - "sair do ifood"
+          - "alternativa ao ifood"
+          - "receber pedidos direto"
+
+      Z4_google_maps:
+        nome: "Google Meu Negócio / Maps"
+        peso: 8
+        keywords:
+          - "google meu negócio"
+          - "cadastrar google maps"
+          - "não apareço no maps"
+          - "código verificação google"
+          - "restaurante não aparece no google"
+
+      Z5_trafego_pago:
+        nome: "Tráfego pago / marketing"
+        peso: 8
+        keywords:
+          - "tráfego pago delivery"
+          - "não sei fazer marketing"
+          - "como anunciar delivery"
+          - "pouca venda no delivery"
+
+      Z6_fidelizacao:
+        nome: "Fidelização / clientes sumindo"
+        peso: 7
+        keywords:
+          - "clientes só pedem ifood"
+          - "como fidelizar cliente"
+          - "como fazer cliente pedir direto"
+
+      Z7_precificacao:
+        nome: "Precificação / margem"
+        peso: 9
+        keywords:
+          - "como precificar delivery"
+          - "margem de lucro delivery"
+          - "ficou no zero o lucro"
+
+intencao_alta:
+  - "o que fazer quando"
+  - "alguém já passou por isso"
+  - "como proceder"
+  - "preciso de ajuda"
+  - "me ajudem"
+  - "vale a pena"

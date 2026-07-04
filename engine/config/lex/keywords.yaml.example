@@ -1,0 +1,17 @@
+# Copie para keywords.yaml — taxonomia proprietária (NÃO commitar)
+nichos:
+  lex_rocha:
+    nome: "[SEU NICHO]"
+    emoji: "⚖️"
+    cta_link: "https://lexrocha.com.br"
+    cta_texto: "[CTA]"
+    score_minimo: 7
+    grupos:
+      G1_exemplo:
+        nome: "Grupo exemplo"
+        peso: 8
+        keywords:
+          - "[keyword confidencial]"
+
+intencao_alta:
+  - "[frase de intenção alta]"

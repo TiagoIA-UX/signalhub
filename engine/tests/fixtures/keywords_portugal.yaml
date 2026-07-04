@@ -1,0 +1,56 @@
+nichos:
+  lex_portugal:
+    nome: "Direitos do Consumidor"
+    marca: "Direitos do Consumidor"
+    emoji: "🇵🇹"
+    dominio: "direitosconsumidor.com"
+    cta_link: "https://www.direitosconsumidor.com"
+    legal_pt:
+      lei_base: "Lei n.º 24/96"
+      consulta_advogado_eur: 48
+      geral:
+        prazo_resposta: "15 dias úteis"
+        base_prazo: "DL 156/2005"
+      setores:
+        pt_telecom:
+          prazo: "15 dias úteis"
+          regulatorio: "ANACOM"
+          nota_prazo: "Cópia à ANACOM; LCE para fidelização."
+    empresa:
+      cnpj: "61.699.939/0001-80"
+      forma: "MEI"
+      atuacao: "Especialistas em pesquisa jurídica documental"
+    score_minimo: 7
+    precos:
+      essencial: 29
+      padrao: 39
+      completo: 59
+      tagline: "x"
+      nota: "x"
+    grupos:
+      pt_telecom:
+        nome: "Telecom"
+        peso: 9
+        plano_sugerido: padrao
+        roi_referencia: "€100–€300"
+        keywords:
+          - "fidelização"
+          - "meo"
+      pt_logistica:
+        nome: "CTT"
+        peso: 8
+        plano_sugerido: essencial
+        roi_referencia: "€40–€150"
+        keywords:
+          - "ctt"
+      pt_cancelamento:
+        nome: "Cancelamento"
+        peso: 9
+        plano_sugerido: padrao
+        roi_referencia: "€80–€250"
+        keywords:
+          - "cancelar"
+          - "fidelização"
+
+intencao_alta:
+  - "vale a pena"

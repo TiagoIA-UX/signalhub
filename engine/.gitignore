@@ -1,0 +1,8 @@
+.env
+lex/.env
+zairyx/.env
+portugal/.env
+.venv/
+__pycache__/
+.pytest_cache/
+logs/*.log

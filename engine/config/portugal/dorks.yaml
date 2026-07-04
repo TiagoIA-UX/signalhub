@@ -1,0 +1,140 @@
+# Local — optimizado 2026-06-09 — NÃO commitar
+# 18 dorks DDG alto ROI · Reddit API intacto · Tier C/D removidos
+
+meta:
+  tenant: lex_portugal
+  versao: '2.2-optim'
+  portal_queixa: desactivado_ate_nipc
+  max_results_por_dork: 6
+  delay_segundos_entre_dorks: 4
+  nota: >-
+    Dorks site:reddit.com removidos — cobertos pela fonte reddit (r/portugal,
+    r/financaspessoaispt). Reguladores, imprensa e reviews Maps cortados (Tier C).
+
+fontes:
+- duckduckgo
+- reddit
+
+reddit:
+  subreddits:
+  - portugal
+  - financaspessoaispt
+  limit: 20
+
+hackernews:
+  queries: []
+
+rss:
+  feeds: []
+
+dorks:
+# --- Trustpilot (6) — queixas recentes, marcas PT ---
+- id: pt_opt_001
+  canal: trustpilot
+  grupo: pt_telecom
+  query: site:trustpilot.com MEO Portugal review
+- id: pt_opt_002
+  canal: trustpilot
+  grupo: pt_logistica
+  query: site:trustpilot.com CTT Portugal
+- id: pt_opt_003
+  canal: trustpilot
+  grupo: pt_ecommerce
+  query: site:trustpilot.com Worten OR Fnac Portugal
+- id: pt_opt_004
+  canal: trustpilot
+  grupo: pt_banco
+  query: site:trustpilot.com Millennium OR Novo Banco
+- id: pt_opt_005
+  canal: trustpilot
+  grupo: pt_energia
+  query: site:trustpilot.com EDP Portugal
+- id: pt_opt_006
+  canal: trustpilot
+  grupo: pt_cancelamento
+  query: site:trustpilot.com operadora Portugal cancelar
+
+# --- Fóruns PT (5) — pedidos reais, respondíveis ---
+- id: pt_opt_007
+  canal: forums_pt
+  grupo: pt_ecommerce
+  query: site:forum.zwame.pt loja online problema
+- id: pt_opt_008
+  canal: forums_pt
+  grupo: pt_ecommerce
+  query: site:forum.cfdistribuidos.com compra online
+- id: pt_opt_009
+  canal: forums_pt
+  grupo: pt_telecom
+  query: site:forum.hardware.com.pt operadora
+- id: pt_opt_010
+  canal: forums_pt
+  grupo: pt_cancelamento
+  query: site:forum.zwame.pt livro reclamações
+- id: pt_opt_011
+  canal: forums_pt
+  grupo: pt_telecom
+  query: site:forum.zwame.pt MEO OR NOS reclamação
+
+# --- Facebook (3) — testar 1 semana, medir score >= 7 ---
+- id: pt_opt_012
+  canal: facebook
+  grupo: pt_burla
+  query: site:facebook.com burlas Portugal grupo
+- id: pt_opt_013
+  canal: facebook
+  grupo: pt_cancelamento
+  query: site:facebook.com reclamações consumidor Portugal
+- id: pt_opt_014
+  canal: facebook
+  grupo: pt_ecommerce
+  query: site:facebook.com compras online Portugal problema
+
+# --- DECO Proteste (2) — autoridade consumo PT ---
+- id: pt_opt_015
+  canal: deco_proteste
+  grupo: pt_cancelamento
+  query: site:deco.proteste.pt reclamação consumidor
+- id: pt_opt_016
+  canal: deco_proteste
+  grupo: pt_ecommerce
+  query: site:deco.proteste.pt compras online
+
+# --- Trustpilot extra (2) — fintech/entrega frequente em PT ---
+- id: pt_opt_017
+  canal: trustpilot
+  grupo: pt_banco
+  query: site:trustpilot.com Revolut Portugal
+- id: pt_opt_018
+  canal: trustpilot
+  grupo: pt_ecommerce
+  query: site:trustpilot.com Amazon Portugal review
+
+# =============================================================================
+# REMOVIDOS — Tier C/D (não converter / duplicado)
+# =============================================================================
+#
+# DUPLICADO REDDIT API (12) — pt_v2_001–010, 039, 040, 043
+#   site:reddit.com/r/portugal … e site:reddit.com/r/financaspessoaispt …
+#   → fonte reddit já varre estes subreddits a cada ciclo
+#
+# REGULADORES / INSTITUCIONAL (5) — pt_v2_017–019, 042
+#   anacom.pt, consumidor.gov.pt, erse.pt, ans.pt — páginas oficiais, não posts
+#
+# IMPRENSA / BLOGS BANCO (9) — pt_v2_020–025, 036–038, 045
+#   consumerlab, cgd, santander, observador, publico, dn, expresso — artigos
+#
+# GOOGLE MAPS (2) — pt_v2_029, 030
+#   reviews Maps — formato errado para fluxo Telegram R1/R2/R3
+#
+# LINKEDIN (1) — pt_v2_035
+#   volume baixo, tom profissional
+#
+# FACEBOOK NICHO (1) — pt_v2_033
+#   «brasileiros Portugal» — ruído
+#
+# FÓRUMS INTERNACIONAIS (1) — pt_v2_046
+#   4pda.to / techpowerup.com — irrelevante para consumidor PT
+#
+# PORTAL DA QUEIXA — activar quando tiver NIPC registado
+#   site:portaldaqueixa.com …

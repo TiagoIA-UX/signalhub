@@ -1,0 +1,206 @@
+# Gerado por scripts/gerar_dorks_portugal_v2.py — NÃO commitar dorks.yaml real
+# Copie para dorks.yaml e refine queries (CONFIDENCIAL.md)
+
+meta:
+  tenant: lex_portugal
+  versao: '2.1'
+  portal_queixa: desactivado_ate_nipc
+  max_results_por_dork: 6
+  delay_segundos_entre_dorks: 4
+fontes:
+- duckduckgo
+- reddit
+reddit:
+  subreddits:
+  - portugal
+  - financaspessoaispt
+  limit: 20
+hackernews:
+  queries: []
+rss:
+  feeds: []
+dorks:
+- id: pt_v2_001
+  canal: reddit_portugal
+  grupo: pt_burla
+  query: site:reddit.com/r/portugal burla golpe
+- id: pt_v2_002
+  canal: reddit_portugal
+  grupo: pt_cancelamento
+  query: site:reddit.com/r/portugal cancelar contrato fidelização
+- id: pt_v2_003
+  canal: reddit_portugal
+  grupo: pt_telecom
+  query: site:reddit.com/r/portugal MEO NOS Vodafone
+- id: pt_v2_004
+  canal: reddit_portugal
+  grupo: pt_logistica
+  query: site:reddit.com/r/portugal CTT encomenda
+- id: pt_v2_005
+  canal: reddit_portugal
+  grupo: pt_banco
+  query: site:reddit.com/r/portugal banco reclamação
+- id: pt_v2_006
+  canal: reddit_portugal
+  grupo: pt_ecommerce
+  query: site:reddit.com/r/portugal reembolso compra online
+- id: pt_v2_007
+  canal: reddit_portugal
+  grupo: pt_cancelamento
+  query: site:reddit.com/r/portugal direitos consumidor
+- id: pt_v2_008
+  canal: reddit_financas
+  grupo: pt_banco
+  query: site:reddit.com/r/financaspessoaispt banco comissão
+- id: pt_v2_009
+  canal: reddit_financas
+  grupo: pt_banco
+  query: site:reddit.com/r/financaspessoaispt crédito habitação
+- id: pt_v2_010
+  canal: reddit_financas
+  grupo: pt_saude_seguro
+  query: site:reddit.com/r/financaspessoaispt seguro
+- id: pt_v2_011
+  canal: deco_proteste
+  grupo: pt_cancelamento
+  query: site:deco.proteste.pt reclamação consumidor
+- id: pt_v2_012
+  canal: deco_proteste
+  grupo: pt_ecommerce
+  query: site:deco.proteste.pt compras online
+- id: pt_v2_013
+  canal: trustpilot
+  grupo: pt_telecom
+  query: site:trustpilot.com MEO Portugal review
+- id: pt_v2_014
+  canal: trustpilot
+  grupo: pt_logistica
+  query: site:trustpilot.com CTT Portugal
+- id: pt_v2_015
+  canal: trustpilot
+  grupo: pt_ecommerce
+  query: site:trustpilot.com Worten OR Fnac Portugal
+- id: pt_v2_016
+  canal: trustpilot
+  grupo: pt_banco
+  query: site:trustpilot.com Millennium OR Novo Banco
+- id: pt_v2_017
+  canal: reguladores
+  grupo: pt_telecom
+  query: site:anacom.pt reclamação consumidor
+- id: pt_v2_018
+  canal: reguladores
+  grupo: pt_cancelamento
+  query: site:consumidor.gov.pt livro reclamações
+- id: pt_v2_019
+  canal: reguladores
+  grupo: pt_energia
+  query: site:erse.pt reclamação energia
+- id: pt_v2_020
+  canal: blogs_juridicos
+  grupo: pt_cancelamento
+  query: site:consumerlab.nova-sbe.pt direitos consumidor
+- id: pt_v2_021
+  canal: blogs_juridicos
+  grupo: pt_banco
+  query: site:cgd.pt blog consumidor banca
+- id: pt_v2_022
+  canal: blogs_juridicos
+  grupo: pt_banco
+  query: site:santander.pt consumidor
+- id: pt_v2_023
+  canal: blogs_juridicos
+  grupo: pt_ecommerce
+  query: site:observador.pt direitos consumidor compras
+- id: pt_v2_024
+  canal: blogs_juridicos
+  grupo: pt_habitacao
+  query: site:publico.pt arrendamento senhorio
+- id: pt_v2_025
+  canal: blogs_juridicos
+  grupo: pt_telecom
+  query: site:dn.pt telecomunicações reclamação
+- id: pt_v2_026
+  canal: forums_pt
+  grupo: pt_ecommerce
+  query: site:forum.zwame.pt loja online problema
+- id: pt_v2_027
+  canal: forums_pt
+  grupo: pt_ecommerce
+  query: site:forum.cfdistribuidos.com compra online
+- id: pt_v2_028
+  canal: forums_pt
+  grupo: pt_telecom
+  query: site:forum.hardware.com.pt operadora
+- id: pt_v2_029
+  canal: google_reviews
+  grupo: pt_telecom
+  query: site:google.com/maps MEO Lisboa reviews
+- id: pt_v2_030
+  canal: google_reviews
+  grupo: pt_logistica
+  query: site:google.com/maps CTT reviews
+- id: pt_v2_031
+  canal: facebook
+  grupo: pt_burla
+  query: site:facebook.com burlas Portugal grupo
+- id: pt_v2_032
+  canal: facebook
+  grupo: pt_cancelamento
+  query: site:facebook.com reclamações consumidor Portugal
+- id: pt_v2_033
+  canal: facebook
+  grupo: pt_cancelamento
+  query: site:facebook.com brasileiros Portugal direitos
+- id: pt_v2_034
+  canal: facebook
+  grupo: pt_ecommerce
+  query: site:facebook.com compras online Portugal problema
+- id: pt_v2_035
+  canal: linkedin
+  grupo: pt_banco
+  query: site:linkedin.com/posts Portugal banco cliente reclamação
+- id: pt_v2_036
+  canal: noticias
+  grupo: pt_ecommerce
+  query: site:publico.pt consumidor loja online
+- id: pt_v2_037
+  canal: noticias
+  grupo: pt_telecom
+  query: site:dn.pt ANACOM telecom
+- id: pt_v2_038
+  canal: noticias
+  grupo: pt_burla
+  query: site:observador.pt burla consumidor
+- id: pt_v2_039
+  canal: reddit_portugal
+  grupo: pt_energia
+  query: site:reddit.com/r/portugal EDP Galp fatura
+- id: pt_v2_040
+  canal: reddit_portugal
+  grupo: pt_habitacao
+  query: site:reddit.com/r/portugal senhorio arrendamento
+- id: pt_v2_041
+  canal: trustpilot
+  grupo: pt_energia
+  query: site:trustpilot.com EDP Portugal
+- id: pt_v2_042
+  canal: reguladores
+  grupo: pt_saude_seguro
+  query: site:ans.pt seguro saúde reclamação
+- id: pt_v2_043
+  canal: reddit_portugal
+  grupo: pt_cobranca_indevida
+  query: site:reddit.com/r/portugal cobrança indevida
+- id: pt_v2_044
+  canal: trustpilot
+  grupo: pt_cancelamento
+  query: site:trustpilot.com operadora Portugal cancelar
+- id: pt_v2_045
+  canal: noticias
+  grupo: pt_logistica
+  query: site:expresso.pt CTT consumidor
+- id: pt_v2_046
+  canal: forums_pt
+  grupo: pt_burla
+  query: site:4pda.to OR site:techpowerup.com Portugal compra golpe

@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/seen.sqlite
+*.sqlite
+# --- segredos (token GitHub / env) ---
+.env.*
+!.env.example
+.env.local

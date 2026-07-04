@@ -1,0 +1,243 @@
+# Copie para keywords.yaml — taxonomia proprietária (NÃO commitar)
+
+nichos:
+
+  lex_portugal:
+
+    nome: "Direitos do Consumidor"
+
+    marca: "Direitos do Consumidor"
+
+    emoji: "🇵🇹"
+
+    dominio: "direitosconsumidor.com"
+
+    cta_link: "https://www.direitosconsumidor.com"
+
+    cta_texto: "Relatório reservado — valor acordado por escrito antes do pagamento"
+
+    empresa:
+
+      atuacao: "Clareza documental em direitos do consumidor"
+
+      forma: "MEI"
+
+      cnpj: "61.699.939/0001-80"
+
+    score_minimo: 7
+
+    precos:
+
+      moeda: "EUR"
+
+      essencial: 29
+
+      padrao: 39
+
+      completo: 59
+
+      nota: "Valor confirmado por escrito antes do pagamento."
+
+      tagline: "Pesquisa concentrada num relatório único"
+
+    legal_pt:
+
+      lei_base: "Lei n.º 24/96"
+
+      consulta_advogado_eur: "150-300"
+
+      geral:
+
+        prazo_resposta: "15 dias úteis"
+
+        base_prazo: "DL 156/2005 (Livro de Reclamações)"
+
+      setores:
+
+        pt_telecom:
+
+          prazo: "15 dias úteis"
+
+          regulatorio: "ANACOM"
+
+          nota_prazo: "Cópia à ANACOM em telecom; LCE para fidelização."
+
+        pt_energia:
+
+          prazo: "15 dias úteis"
+
+          regulatorio: "ERSE"
+
+          nota_prazo: "Entidade reguladora de energia."
+
+        pt_banco:
+
+          prazo: "15 dias úteis"
+
+          regulatorio: "Banco de Portugal"
+
+          nota_prazo: "Reclamação ao banco e, se necessário, BdP."
+
+        pt_saude_seguro:
+
+          prazo: "15 dias úteis"
+
+          regulatorio: "ASF / ANS"
+
+          nota_prazo: "Seguros: ASF; saúde: entidade do contrato."
+
+    grupos:
+
+      pt_cancelamento:
+
+        nome: "Cancelamento / fidelização"
+
+        peso: 9
+
+        plano_sugerido: padrao
+
+        roi_referencia: "€80–€250"
+
+        keywords: [cancelar, cancelamento, fidelização, fidelizacao, rescindir, denunciar contrato]
+
+      pt_cobranca_indevida:
+
+        nome: "Cobrança indevida"
+
+        peso: 9
+
+        plano_sugerido: padrao
+
+        roi_referencia: "€50–€400"
+
+        keywords: [cobrança indevida, cobranca indevida, débito, debito, comissão, comissao, tarifa abusiva]
+
+      pt_produto_nao_entregue:
+
+        nome: "Produto não entregue"
+
+        peso: 8
+
+        plano_sugerido: essencial
+
+        roi_referencia: "€40–€200"
+
+        keywords: [não chegou, nao chegou, não entregue, atraso entrega, encomenda perdida]
+
+      pt_burla:
+
+        nome: "Burla / golpe"
+
+        peso: 8
+
+        plano_sugerido: completo
+
+        roi_referencia: "€100–€500"
+
+        keywords: [burla, golpe, fraude, scam, enganado, estafa]
+
+      pt_saude_seguro:
+
+        nome: "Saúde / seguro"
+
+        peso: 8
+
+        plano_sugerido: padrao
+
+        roi_referencia: "€80–€350"
+
+        keywords: [seguro, saúde, saude, múltiplo, recusa cobertura, sinistro]
+
+      pt_telecom:
+
+        nome: "Telecomunicações"
+
+        peso: 9
+
+        plano_sugerido: padrao
+
+        roi_referencia: "€100–€300"
+
+        keywords: [meo, nos, vodafone, digi, nowo, telecom, operadora, fidelização]
+
+      pt_banco:
+
+        nome: "Banca / crédito"
+
+        peso: 9
+
+        plano_sugerido: padrao
+
+        roi_referencia: "€80–€400"
+
+        keywords: [banco, millennium, santander, cgd, novo banco, crédito, cartão, empréstimo]
+
+      pt_energia:
+
+        nome: "Energia"
+
+        peso: 8
+
+        plano_sugerido: padrao
+
+        roi_referencia: "€60–€250"
+
+        keywords: [edp, galp, endesa, energia, eletricidade, gás, fatura energia]
+
+      pt_habitacao:
+
+        nome: "Habitação / arrendamento"
+
+        peso: 7
+
+        plano_sugerido: essencial
+
+        roi_referencia: "€50–€200"
+
+        keywords: [senhorio, arrendamento, caução, renda, condomínio, obras]
+
+      pt_ecommerce:
+
+        nome: "E-commerce"
+
+        peso: 8
+
+        plano_sugerido: essencial
+
+        roi_referencia: "€40–€180"
+
+        keywords: [loja online, amazon, worten, fnac, reembolso, devolução, produto defeituoso]
+
+      pt_logistica:
+
+        nome: "Logística / CTT"
+
+        peso: 8
+
+        plano_sugerido: essencial
+
+        roi_referencia: "€40–€150"
+
+        keywords: [ctt, dhl, ups, correios, encomenda, transportadora]
+
+
+
+intencao_alta:
+
+  - vale a pena reclamar
+
+  - como reclamar
+
+  - livro de reclamações
+
+  - posso cancelar
+
+  - direitos do consumidor
+
+  - portal da queixa
+
+  - compensação
+
+  - indemnização
+
+
