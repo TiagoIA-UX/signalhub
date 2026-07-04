@@ -85,7 +85,7 @@ Regras operacionais do robô (palavras-chave, varredura, prompts) **não ficam n
 | SignalHub | este repositório |
 | Lex Rocha Brasil | [lex-rocha-brasil](https://github.com/TiagoIA-UX/lex-rocha-brasil) |
 | Lex Rocha Portugal | [lex-rocha-portugal](https://github.com/TiagoIA-UX/lex-rocha-portugal) |
-| Judicial Intelligence (EUA) | [judicial-intelligence](https://github.com/TiagoIA-UX/judicial-intelligence) |
+| Judicial Intelligence (EUA) | [lex-rocha-estados-unidos](https://github.com/TiagoIA-UX/lex-rocha-estados-unidos) |
 
 ---
 

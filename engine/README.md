@@ -7,7 +7,7 @@ Motor do robô inteligente (multi-contexto).
 | `zairyx/` | bot local neste repo | Operação padrão do hub (credenciais do `.env` mestre) |
 | `lex/` | ponte | Produto Brasil (`09-lex-rocha-brasil`) |
 | `portugal/` | ponte | Produto Portugal (`08-lex-rocha-portugal`) |
-| `usa/` | ponte | Produto EUA (`04-judicial-intelligence`) |
+| `usa/` | ponte | Produto EUA (`04-judicial-intelligence` → [lex-rocha-estados-unidos](https://github.com/TiagoIA-UX/lex-rocha-estados-unidos)) |
 
 Credenciais: edite `../.env` e rode `../scripts/sincronizar-env.ps1`.
 
