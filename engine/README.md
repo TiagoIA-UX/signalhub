@@ -1,13 +1,13 @@
-# SignalHub Engine (v2)
+# SignalHub Engine
 
-Motor multi-tenant de detecção e alertas.
+Motor do robô inteligente (multi-contexto).
 
-| Tenant | Pasta | Papel |
-|--------|-------|--------|
-| `zairyx/` | bot local neste repo | Delivery / alertas do hub (credenciais do `.env` mestre) |
-| `lex/` | shim | Aponta para `09-lex-rocha-brasil/signalhub-br` |
-| `portugal/` | shim | Aponta para `08-lex-rocha-portugal/signalhub/portugal` |
-| `usa/` | shim | Aponta para `04-judicial-intelligence/signalhub/usa` |
+| Contexto | Pasta | Papel |
+|----------|-------|--------|
+| `zairyx/` | bot local neste repo | Operação padrão do hub (credenciais do `.env` mestre) |
+| `lex/` | ponte | Produto Brasil (`09-lex-rocha-brasil`) |
+| `portugal/` | ponte | Produto Portugal (`08-lex-rocha-portugal`) |
+| `usa/` | ponte | Produto EUA (`04-judicial-intelligence`) |
 
 Credenciais: edite `../.env` e rode `../scripts/sincronizar-env.ps1`.
 
@@ -16,5 +16,5 @@ cd engine
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python zairyx/bot.py detectar
+python zairyx/bot.py
 ```

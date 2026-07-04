@@ -1,99 +1,97 @@
 # SignalHub
 
-**Detecção assistida de intenção · Alertas no Telegram · Qualificação de leads**
+**Robô inteligente de captação em dados públicos · Alertas no Telegram · Qualificação assistida**
 
 [![License: Business](https://img.shields.io/badge/license-Business-blue.svg)](./LICENSE)
-[![Compliance](https://img.shields.io/badge/compliance-human--in--the--loop-green.svg)](./COMPLIANCE.md)
+[![Compliance](https://img.shields.io/badge/compliance-dados--publicos-green.svg)](./COMPLIANCE.md)
 [![Status](https://img.shields.io/badge/status-commercial-orange.svg)](./PLANOS_E_PRECOS.md)
 
 > Software **proprietário** com **Business License**.  
-> Código pode ser público para transparência técnica — **uso em produção exige assinatura**.  
-> Não é open source.
+> Não é open source. Uso em produção exige assinatura comercial.
 
 **Titular:** Tiago Aureliano da Rocha · CNPJ 61.699.939/0001-80 (Lex Rocha)
 
 ---
 
-## Por que existe
+## O que é
 
-Equipes comerciais e legal techs perdem tempo vasculhando redes e fóruns à mão. O SignalHub **monitora sinais públicos**, classifica intenção com IA e **alerta no Telegram** para um humano decidir o próximo passo — com opcional **qualificação estruturada** de leads.
+O SignalHub é um **robô inteligente** que ajuda a **captar interesse de pessoas na internet** a partir de **informações públicas** — publicações e discussões abertas em que alguém já expressou uma necessidade.
 
-Ideal para quem vende:
+Ele:
 
-- serviços de direitos do consumidor / legal tech  
-- soluções para delivery e operações locais  
-- prospecção ética baseada em **demanda expressa**, não em spam
+1. **Observa** fontes públicas (conforme configuração do operador)  
+2. **Classifica** o sinal com IA (relevância / urgência)  
+3. **Alerta** o operador no Telegram  
+4. **Opcionalmente** registra e qualifica o contato no painel web  
+
+**Sempre com humano no loop:** o software **não** envia mensagens sozinho a desconhecidos. Quem decide contatar — e como — é a pessoa responsável pela operação.
+
+Não é advocacia, não emite parecer jurídico e não substitui profissional habilitado.
 
 ---
 
-## O que entrega
+## Módulos
 
 | Módulo | Função |
 |--------|--------|
-| **Bot** | Monitoramento (ex.: Reddit), filtros, score, alerta Telegram |
-| **Engine** | Motor multi-tenant (dorks, keywords, scan) |
-| **Web** | Qualificação de leads (IA + banco + notificação) |
-
-**Humano no loop:** nada de disparo automático de mensagem a desconhecidos. O operador aprova.
+| **Bot** | Monitoramento de fontes públicas, classificação e alerta no Telegram |
+| **Engine** | Motor multi-contexto (regras, palavras-chave, varredura configurável) |
+| **Web** | Qualificação assistida de contatos (IA + banco + notificação) |
 
 ---
 
-## Licença Business (ético e transparente)
+## Licença Business
 
 | | |
 |--|--|
 | **Modelo** | Assinatura comercial (`LICENSE`) |
-| **Avaliação** | Leitura do código + demo local até 14 dias |
+| **Avaliação** | Leitura do código + demonstração local (prazo na licença) |
 | **Produção** | Somente com plano ativo (`PLANOS_E_PRECOS.md`) |
-| **Compliance** | Regras de uso ético em `COMPLIANCE.md` |
+| **Uso ético** | `COMPLIANCE.md` |
 
-É **eticamente correto** cobrar por software proprietário quando:
+---
 
-1. a licença deixa claro que **não é open source**;  
-2. o marketing **não promete** resultado jurídico nem volume garantido de clientes;  
-3. a operação exige **revisão humana** e respeito à LGPD e às plataformas.
+## Uso responsável (resumo)
 
-É **incorreto** (e proibido pela licença) fingir que o código público é “grátis para uso comercial”.
+- Apenas **dados públicos** e acessíveis sem autenticação indevida  
+- **Revisão humana** antes de qualquer contato  
+- Respeito à **LGPD**, ao Marco Civil e aos termos das plataformas  
+- Sem promessa de resultado comercial ou jurídico  
+
+Detalhes: [COMPLIANCE.md](./COMPLIANCE.md)
 
 ---
 
 ## Stack
 
-- Python (bot + engine)  
-- Next.js (web de qualificação)  
-- Groq (classificação / qualify)  
-- Telegram (alertas)  
-- Supabase (persistência do web)
-
-Credenciais: um único `.env` na raiz → `scripts/sincronizar-env.ps1`.
+Python (bot e motor) · Next.js (web) · IA (classificação) · Telegram (alertas) · Supabase (persistência do web)
 
 ```powershell
 copy .env.example .env
-# preencha as chaves
 .\INICIAR.ps1 -Instalar
 .\INICIAR.ps1
 ```
 
+Credenciais mestras na raiz (`.env`); sincronização: `scripts/sincronizar-env.ps1`.
+
 ---
 
-## Produtos irmãos (legal tech)
+## Ecossistema
 
-O SignalHub é a **plataforma de sinais**. Os sites de produto vivem em repositórios separados:
-
-| Mercado | Repositório |
+| Produto | Repositório |
 |---------|-------------|
-| Brasil | [lex-rocha-brasil](https://github.com/TiagoIA-UX/lex-rocha-brasil) |
-| Portugal | [lex-rocha-portugal](https://github.com/TiagoIA-UX/lex-rocha-portugal) |
-| EUA | [judicial-intelligence](https://github.com/TiagoIA-UX/judicial-intelligence) |
-| Template | [lex-rocha-template](https://github.com/TiagoIA-UX/lex-rocha-template) |
+| SignalHub | este repositório |
+| Lex Rocha Brasil | [lex-rocha-brasil](https://github.com/TiagoIA-UX/lex-rocha-brasil) |
+| Lex Rocha Portugal | [lex-rocha-portugal](https://github.com/TiagoIA-UX/lex-rocha-portugal) |
+| Judicial Intelligence (EUA) | [judicial-intelligence](https://github.com/TiagoIA-UX/judicial-intelligence) |
 
 ---
 
 ## Comercial
 
-- Planos: [PLANOS_E_PRECOS.md](./PLANOS_E_PRECOS.md)  
-- Licença: [LICENSE](./LICENSE)  
-- Compliance: [COMPLIANCE.md](./COMPLIANCE.md)
+- [PLANOS_E_PRECOS.md](./PLANOS_E_PRECOS.md)  
+- [LICENSE](./LICENSE)  
+- [COMPLIANCE.md](./COMPLIANCE.md)
 
 **© 2026 Tiago Aureliano da Rocha — SignalHub, licença business.**  
 Todos os direitos reservados.

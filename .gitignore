@@ -6,6 +6,11 @@ bot/.env
 web/.env.local
 engine/**/.env
 
+# Estratégia interna (não publicar)
+CURSOR_PROMPT*.md
+**/CURSOR_PROMPT*.md
+*_PROMPT*.md
+
 # Python
 .venv/
 venv/
