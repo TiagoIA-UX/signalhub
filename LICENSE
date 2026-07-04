@@ -1,0 +1,78 @@
+# SignalHub Business License (Licença Comercial por Assinatura)
+
+**Titular:** Tiago Aureliano da Rocha  
+**CNPJ:** 61.699.939/0001-80 — Lex Rocha (prestação de serviços)  
+**Software:** SignalHub (repositório `signalhub`)  
+**Tipo:** Software proprietário — **não é open source**
+
+---
+
+## 1. Natureza
+
+Este software é **proprietário** e licenciado sob modelo **Business / assinatura comercial**.
+
+- Não é software livre (GPL, MIT, Apache, etc.).
+- A visibilidade do código (se o repositório for público) **não** concede direito de uso comercial, cópia operacional, fork para produção ou redistribuição.
+- “Source-available” ≠ “open source”: você pode **ler** o código para avaliação; **usar em produção** exige contrato e pagamento.
+
+## 2. Uso sem licença comercial ativa
+
+É **proibido**, sem contrato escrito e plano ativo com o Titular:
+
+- Instalar, executar ou hospedar em produção (própria ou de clientes);
+- Copiar, clonar, forkar ou republicar o repositório ou partes substanciais para fins comerciais;
+- Revender, sublicenciar, white-label ou embutir em outro produto;
+- Remover avisos de copyright, fingerprint (`.zairyx-fingerprint`) ou referências ao Titular;
+- Utilizar prompts, dorks, keywords, fluxos de alerta ou lógica de qualificação fora do escopo autorizado;
+- Contato ativo automatizado a pessoas sem base legal e sem aprovação humana (ver `COMPLIANCE.md`).
+
+## 3. Uso com licença comercial (assinatura)
+
+Com **contrato aceito** e **pagamento em dia** conforme `PLANOS_E_PRECOS.md`:
+
+- Licença **não exclusiva**, **intransferível** e **revogável**;
+- Escopo limitado ao plano (tenants, volume de alertas, canais, suporte);
+- Vigência **mês a mês** (ou prazo anual se contratado);
+- Inadimplência **suspende** a licença automaticamente;
+- O Cliente é responsável pelo uso final dos alertas e pela conformidade com LGPD, Marco Civil, regras de plataformas (Reddit, Telegram, etc.) e normas profissionais aplicáveis.
+
+## 4. Avaliação e demonstração
+
+É permitido, **sem pagamento**, apenas:
+
+- Ler a documentação pública e o código para **avaliação técnica**;
+- Rodar em ambiente **local de demonstração**, sem leads reais de terceiros e sem envio de mensagens a desconhecidos,
+  pelo prazo máximo de **14 dias**, salvo autorização escrita em contrário.
+
+Qualquer uso além disso exige licença comercial.
+
+## 5. Propriedade intelectual
+
+Código, documentação, configurações, prompts, marca **SignalHub**, design e fluxos permanecem do Titular.  
+O pagamento **não transfere** propriedade — apenas autoriza uso no período pago.
+
+## 6. Garantias e limitação
+
+O software é fornecido para **detecção assistida** de sinais em fontes públicas e **qualificação de leads**, com **revisão humana**.
+
+- Não há garantia de volume de leads, conversão, receita ou resultado jurídico/comercial.
+- Não constitui advocacia, consultoria jurídica automatizada nem promessa de êxito.
+- Em nenhuma hipótese o Titular responde por danos indiretos superiores ao valor pago nos **últimos 3 meses** de assinatura relacionada.
+
+## 7. Rescisão
+
+O Titular pode rescindir imediatamente em caso de violação de compliance, inadimplência ou uso fraudulento.  
+O Cliente pode cancelar com **30 dias de aviso** (planos anuais conforme contrato específico).
+
+## 8. Lei aplicável
+
+Lei da República Federativa do Brasil. Foro: comarca do domicílio do Titular.
+
+## 9. Contato comercial
+
+Licenciamento, parcerias e denúncias de uso indevido: canais oficiais Lex Rocha / Zairyx indicados no contrato de prestação de serviços.
+
+---
+
+*Versão da licença: 1.0.0 — 2026-07-04*  
+*Planos: [PLANOS_E_PRECOS.md](./PLANOS_E_PRECOS.md) · Compliance: [COMPLIANCE.md](./COMPLIANCE.md)*
