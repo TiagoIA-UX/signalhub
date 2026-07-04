@@ -11,6 +11,16 @@ CURSOR_PROMPT*.md
 **/CURSOR_PROMPT*.md
 *_PROMPT*.md
 
+# Regras operacionais do robo (so no cofre local E:\01_Projetos\_cofre)
+engine/config/**/dorks.yaml
+engine/config/**/keywords.yaml
+engine/config/**/prompts.yaml
+!engine/config/**/*.example
+bot/config/keywords_*.yaml
+bot/config/tenants.yaml
+bot/CONFIGURACAO_PREENCHER.env
+
+
 # Python
 .venv/
 venv/

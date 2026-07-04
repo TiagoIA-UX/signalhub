@@ -74,6 +74,8 @@ copy .env.example .env
 
 Credenciais mestras na raiz (`.env`); sincronização: `scripts/sincronizar-env.ps1`.
 
+Regras operacionais do robô (palavras-chave, varredura, prompts) **não ficam no Git** — só no cofre local da máquina (`E:\01_Projetos\_cofre`). No repositório há apenas `*.example`.
+
 ---
 
 ## Ecossistema
