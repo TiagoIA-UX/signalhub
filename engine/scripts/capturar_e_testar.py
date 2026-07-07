@@ -1,5 +1,7 @@
 """Captura CHAT_ID (90s) e roda teste-live nos dois bots."""
 
+from __future__ import annotations
+
 import asyncio
 import re
 import subprocess
@@ -10,10 +12,24 @@ from pathlib import Path
 import httpx
 
 ROOT = Path(__file__).parent.parent
-BOTS = [
-    ("Lex", "8531949198:AAF5sL8bcWEVqwhhHrBCNJLqutou9As-6DI", ROOT / "lex" / ".env"),
-    ("Zai", "8911885159:AAH6-ww5fmyS9jqn_oBWyfumNQtGxTkiVc8", ROOT / "zairyx" / ".env"),
+BOTS: list[tuple[str, Path]] = [
+    ("Lex", ROOT / "lex" / ".env"),
+    ("Zai", ROOT / "zairyx" / ".env"),
 ]
+
+
+def _ler_token(env_path: Path) -> str:
+    if not env_path.is_file():
+        raise SystemExit(
+            f"Arquivo ausente: {env_path}\n"
+            "Copie o .env.example correspondente e preencha TELEGRAM_BOT_TOKEN."
+        )
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("TELEGRAM_BOT_TOKEN="):
+            token = line.split("=", 1)[1].strip().strip('"').strip("'")
+            if token:
+                return token
+    raise SystemExit(f"TELEGRAM_BOT_TOKEN ausente ou vazio em {env_path}")
 
 
 async def poll_bot(name: str, token: str, env_path: Path) -> int | None:
@@ -50,7 +66,10 @@ async def poll_bot(name: str, token: str, env_path: Path) -> int | None:
 
 
 async def main() -> None:
-    results = await asyncio.gather(*[poll_bot(n, t, p) for n, t, p in BOTS])
+    bots_com_token = [(n, _ler_token(p), p) for n, p in BOTS]
+    results = await asyncio.gather(
+        *[poll_bot(n, t, p) for n, t, p in bots_com_token]
+    )
     chat_ids = [r for r in results if r]
     if not chat_ids:
         print("\nNenhum CHAT_ID capturado. Envie /start nos dois bots e rode de novo.")
@@ -58,10 +77,10 @@ async def main() -> None:
 
     # Mesmo usuario -> mesmo ID nos dois; se capturou um, copia pro outro
     cid = chat_ids[0]
-    for _, _, p in BOTS:
-        txt = p.read_text(encoding="utf-8")
+    for _, env_path in BOTS:
+        txt = env_path.read_text(encoding="utf-8")
         txt = re.sub(r"TELEGRAM_CHAT_ID=.*", f"TELEGRAM_CHAT_ID={cid}", txt)
-        p.write_text(txt, encoding="utf-8")
+        env_path.write_text(txt, encoding="utf-8")
 
     print(f"\nCHAT_ID unificado: {cid}")
     print("Rodando teste-live...\n")
